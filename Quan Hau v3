@@ -4,7 +4,7 @@ local Tab = Window:NewTab("Main")
 local Section = Tab:NewSection("Redeem Key")
 Section:NewTextBox("Redeem Key", "", function(txt)
     _G.Key = txt
-    if _G.Key == "150TV" then
+    if _G.Key == "100fl" then
         for i,v in pairs(game:GetService("CoreGui"):GetChildren()) do
 for i,v2 in pairs(v:GetChildren()) do
 if v2.Name == "Main" then
