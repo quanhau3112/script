@@ -5,7 +5,7 @@
 local MAINHUB = Instance.new("ScreenGui")
 local OPENCLOSE = Instance.new("TextButton")
 
-MAINHUB.Name = "Quan Hau[FREE] 4"
+MAINHUB.Name = "Quan Hav1v1"
 MAINHUB.Parent = game.CoreGui
 MAINHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
