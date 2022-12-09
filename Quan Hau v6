@@ -6893,4 +6893,36 @@ Settings:Title()
     Settings:Toggle("Skill V",true,function(value)
         _G.SkillV = value
     end)
-    
+
+    ESP:Toggle("Esp Players",false,function(a)
+        ESPPlayer = a
+        UpdateEspPlayer()
+        end)
+    ESP:Toggle("Esp Chest",false,function(b)
+        ChestESP = b
+        UpdateChestEsp()
+        end)
+    ESP:Toggle("Esp Fruits",false,function(c)
+        DevilFruitESP = c
+        UpdateBfEsp()
+        end)
+        ESP:Toggle("Esp Flower",false,function(d)
+        FlowerESP = d
+        UpdateFlowerEsp()
+        end)
+        spawn(function()
+        while wait(0) do
+            if FlowerESP then
+                UpdateFlowerEsp() 
+            end
+            if DevilFruitESP then
+                UpdateBfEsp() 
+            end
+            if ChestESP then
+                UpdateChestEsp() 
+            end
+            if ESPPlayer then
+                UpdateEspPlayer()
+            end
+        end
+    end)
