@@ -1,0 +1,53 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Quan Hau", "DarkTheme")
+
+local Tab = Window:NewTab("Script In Quan Hau")
+local Section = Tab:NewSection("Script Main")
+
+Section:NewButton("Script Show Item", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/CFA-HUB/CFAHub-Free/main/ShowItem.lua'))()
+end)
+
+Section:NewButton("Script Quan Hau 17.3", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%2017.4'))()
+end)
+
+Section:NewButton("Script Quan Hau 17.2", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%2017.3'))()
+end)
+
+Section:NewButton("Script Quan Hau TikTok ", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20TikTok'))()
+end)
+
+Section:NewButton("Script Quan Hau", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau'))()
+end)
+
+Section:NewButton("Script Quan Hau v1", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v1'))()
+end)
+
+Section:NewButton("Script Quan Hau v2", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v2'))()
+end)
+
+Section:NewButton("Script Quan Hau v3", "Key : 100fl", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v3'))()
+end)
+
+Section:NewButton("Script Quan Hau v4", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v4'))()
+end)
+
+Section:NewButton("Script Quan Hau v5 ", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v5'))()
+end)
+
+Section:NewButton("Script Quan Hau v6 ", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v6'))()
+end)
+
+Section:NewButton("Script Slacking ", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/slacking'))()
+end)
