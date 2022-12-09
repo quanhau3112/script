@@ -8,11 +8,11 @@ Section:NewButton("Script Show Item", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CFA-HUB/CFAHub-Free/main/ShowItem.lua'))()
 end)
 
-Section:NewButton("Script Quan Hau 17.4", "ButtonInfo", function()
+Section:NewButton("Script Quan Hau 1733", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%2017.4'))()
 end)
 
-Section:NewButton("Script Quan Hau 17.3 ", "ButtonInfo", function()
+Section:NewButton("Script Quan Hau 17.2 ", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%2017.3'))()
 end)
 
