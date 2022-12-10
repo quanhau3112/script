@@ -47,3 +47,7 @@ end)
 Section:NewButton("Script Quan Hau v6 ", "ButtonInfo", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v6'))()
 end)
+
+Section:NewButton("Script Quan Hau v7 ", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v7'))()
+end)
