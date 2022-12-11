@@ -1402,7 +1402,7 @@ WeaponList = {}
         end
     end)
 
-Main:Toggle("Dough Boss",true,function(value)
+Main:Toggle("Dough Boss",_G.AutoDoughBoss,function(value)
 	_G.AutoDoughtBoss = value
         StopTween(_G.AutoDoughtBoss)
     end)
