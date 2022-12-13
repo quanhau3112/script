@@ -1,73 +1,89 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Quan Hau", "DarkTheme")
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
 
-local Tab = Window:NewTab("Script In Quan Hau")
-local Section = Tab:NewSection("Script Main")
+local win = DiscordLib:Window("Quan Hau Main")
+local serv = win:Server("Script In Quan Hau", "http://www.roblox.com/asset/?id=6031075938")
+local serv1 = win:Server("Misc", "http://www.roblox.com/asset/?id=6031075938")
 
-Section:NewButton("Script Show Item", "ButtonInfo", function()
+local Main = serv:Channel("Main")
+local Main1 = serv:Channel("Main 2")
+local Misc = serv1:Channel("Server")
+
+local n = ''
+Main1:Seperator()
+Main1:Label("Extra Scripts")
+Main1:Seperator()
+
+Main1:Button("Script Show Item", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/CFA-HUB/CFAHub-Free/main/ShowItem.lua'))()
 end)
 
-Section:NewButton("Script QH Hub", "ButtonInfo", function()
+Main1:Button("Script QH Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/QH%20Hub.lua'))()
 end)
 
-Section:NewButton("Script Quan Hau Mobie", "ButtonInfo", function()
+Main1:Button("Script Quan Hau Mobie", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20Mobie'))()
 end)
 
-Section:NewButton("Script Quan Hau Pc", "ButtonInfo", function()
+Main1:Button("Script Quan Hau Pc", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20Pc'))()
 end)
 
-Section:NewButton("Script Quan Hau 17.3", "ButtonInfo", function()
+Main1:Button("Script Quan Hau 17.3", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%2017.4'))()
 end)
 
-Section:NewButton("Script Quan Hau 17.2", "ButtonInfo", function()
+Main1:Button("Script Quan Hau 17.2", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%2017.3'))()
 end)
 
-Section:NewButton("Script Quan Hau TikTok ", "ButtonInfo", function()
+Main1:Button("Script Quan Hau TikTok ", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20TikTok'))()
 end)
 
-Section:NewButton("Script Quan Hau", "ButtonInfo", function()
+local n = ''
+Main:Seperator()
+Main:Label("Main Scripts")
+Main:Seperator()
+
+Main:Button("Script Quan Hau", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau'))()
 end)
 
-Section:NewButton("Script Quan Hau v1", "ButtonInfo", function()
+Main:Button("Script Quan Hau v1", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v1'))()
 end)
 
-Section:NewButton("Script Quan Hau v2", "ButtonInfo", function()
+Main:Button("Script Quan Hau v2", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v2'))()
 end)
 
-Section:NewButton("Script Quan Hau v3", "Key : 100fl", function()
+Main:Button("Script Quan Hau v3", "Key : 100fl", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v3'))()
 end)
 
-Section:NewButton("Script Quan Hau v4", "ButtonInfo", function()
+Main:Button("Script Quan Hau v4", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v4'))()
 end)
 
-Section:NewButton("Script Quan Hau v5 ", "ButtonInfo", function()
+Main:Button("Script Quan Hau v5", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v5'))()
 end)
 
-Section:NewButton("Script Quan Hau v6 ", "ButtonInfo", function()
+Main:Button("Script Quan Hau v6", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v6'))()
 end)
 
-Section:NewButton("Script Quan Hau v7 ", "ButtonInfo", function()
+Main:Button("Script Quan Hau v7", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Quan%20Hau%20v7'))()
 end)
 
-local Tab1 = Window:NewTab("Misc")
-local Misc = Tab1:NewSection("Server")
+local n = ''
+Misc:Seperator()
+Misc:Label("Server")
+Misc:Seperator()
 
-Misc:NewButton("Rejoin Server", " ", function()
+Misc:Button("Rejoin Server", function()
     local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
@@ -85,7 +101,7 @@ end)
 coroutine.resume(Rejoin)                         
     end)
 
-Misc:NewButton("Server Hop", " ", function()
+Misc:Button("Server Hop", function()
     local PlaceID = game.PlaceId
 local AllIDs = {}
 local foundAnything = ""
@@ -158,11 +174,3 @@ end
 -- If you'd like to use a script before server hopping (Like a Automatic Chest collector you can put the Teleport() after it collected everything.
 TeleportSmall()
     end)
-
-    local Tab2 = Window:NewTab("Toggle Ui") 
-    local Section2 = Tab2:NewSection("Toggle Ui")
-
-    Section2:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.RightControl, function()
-        Library:ToggleUI()
-    end)
-        
