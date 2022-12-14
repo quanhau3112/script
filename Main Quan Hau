@@ -15,7 +15,7 @@ Main:Textbox("Key", "Your key here", true, function(t)
 end)
 
 Main:Button("Check key", function()
-	if n == '30tv' 
+	if n == '2df' 
 	then
 		DiscordLib:Notification("Quan Hau", "Correct Key", "Okay")
 		wait(3)
