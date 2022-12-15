@@ -2,20 +2,18 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("Quan Hau Main")
 local serv = win:Server("Script In Quan Hau", "http://www.roblox.com/asset/?id=6031075938")
+local serv2 = win:Server("script created for people", "http://www.roblox.com/asset/?id=6031075938")
 local serv1 = win:Server("Misc", "http://www.roblox.com/asset/?id=6031075938")
 
 local Main = serv:Channel("Main")
 local Main1 = serv:Channel("Main 2")
+local Main2 = serv2:Channel("Script")
 local Misc = serv1:Channel("Server")
 
 local n = ''
 Main1:Seperator()
 Main1:Label("Extra Scripts")
 Main1:Seperator()
-
-Main1:Button("Script Show Item", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/CFA-HUB/CFAHub-Free/main/ShowItem.lua'))()
-end)
 
 Main1:Button("Script QH Hub", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/QH%20Hub.lua'))()
@@ -173,4 +171,8 @@ end
  
 -- If you'd like to use a script before server hopping (Like a Automatic Chest collector you can put the Teleport() after it collected everything.
 TeleportSmall()
+    end)
+
+    Main2:Button("Script Khanh Mobile", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Khanh%20Mobile'))()
     end)
