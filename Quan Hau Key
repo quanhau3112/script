@@ -180,3 +180,7 @@ TeleportSmall()
     Main2:Button("Script Khanh Mobile", function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Khanh%20Mobile'))()
     end)
+
+    Main2:Button("Script Hdang Mobile", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/quanhau3112/script/main/Hdang%20Mobile'))()
+    end)
